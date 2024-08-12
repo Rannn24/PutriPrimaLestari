@@ -1,0 +1,227 @@
+/* Navbar */
+.navbar .nav-link {
+	color: black;
+}
+
+.navbar .nav-link:hover {
+	color: green;
+}
+
+/* Jumbotron */
+.jumbotron {
+	padding: 6rem 0rem 2rem 0;
+}
+
+/* About */
+#about {
+	padding: 1rem 1rem;
+	background-color: #ddf2fd;
+}
+
+/* Achievements */
+#maintenance {
+	padding: 5rem 1rem;
+}
+
+/* Footer */
+.footer {
+	padding: 1rem 0 0.2rem 0;
+	background-color: #000000;
+}
+
+.jumbotron {
+	padding-top: 6rem;
+	background-color: #e2edff;
+}
+
+#maintenance {
+	background-color: #e2edff;
+}
+
+section {
+	padding-top: 5rem;
+}
+
+/* My Keyboard Section */
+.keyboard-box {
+	position: relative;
+	background-color: #21c50f;
+	border-radius: 10px;
+	height: 500px;
+	transform-style: preserve-3d;
+}
+
+.keyboard-box::before {
+	content: "MY";
+	position: absolute;
+	color: #fff;
+	font-size: 6em;
+	font-weight: bold;
+	font-style: italic;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.keyboard-box:hover::before {
+	opacity: 0.2;
+}
+
+.keyboard-box::after {
+	content: "PROJECT";
+	position: absolute;
+	color: #fff;
+	font-size: 4.3em;
+	font-weight: bold;
+	font-style: italic;
+	top: 350px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.keyboard-box:hover::after {
+	opacity: 0.2;
+}
+
+.keyboard-name {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+	opacity: 0;
+	transform: translate3d(0, 0, 50px);
+	transition: 0.5s;
+}
+
+.keyboard-box:hover .keyboard-name {
+	top: 20px;
+	opacity: 1;
+}
+
+.keyboard-detail-button {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate3d(-50%, 0, 100px);
+	opacity: 0;
+	transition: 0.5s;
+	z-index: 3;
+}
+
+.keyboard-box:hover .keyboard-detail-button {
+	opacity: 1;
+	bottom: 20px;
+}
+
+.keyboard-img {
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	transform: translate3d(-50%, -52%, 80px);
+	max-width: 350px;
+	transition: 0.5s;
+	z-index: 2;
+}
+
+.keyboard-box:hover .keyboard-img {
+	transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.2);
+}
+
+.upper {
+	background-image: url("../img/Meeting.jpeg");
+	background-position: left;
+	background-size: 45%;
+	background-repeat: no-repeat;
+	display: flex;
+	padding-top: 50px;
+	justify-content: end;
+}
+.upper img {
+	width: 50%;
+}
+.upper > div {
+	width: 79%;
+	background-image: linear-gradient(to right, transparent, black 40%);
+	display: inline-block;
+	position: relative;
+	color: aliceblue;
+	padding: 100px 20px;
+	display: flex;
+	justify-content: flex-end; /* Menggunakan flex-end untuk membuat konten berada di ujung kanan */
+}
+
+.upper > div h1 {
+	font-family: "Bauhaus 93", sans-serif; /* Menetapkan jenis font hanya untuk elemen H1 */
+	font-size: 35px; /* Contoh ukuran font untuk elemen H1 */
+	text-align: right; /* Mengatur teks ke kanan */
+	margin: 0; /* Menghapus margin default dari H1 */
+}
+
+.upper > div > div {
+	width: auto;
+	margin-right: 50px;
+}
+.upper > div > div > p {
+	color: grey;
+}
+.upper > div > div > p:nth-child(1) {
+	letter-spacing: 2px;
+}
+.upper > div > p:nth-child(1) {
+	font-size: large;
+}
+.upper > div > div > div {
+	background-color: aliceblue;
+	color: black;
+	width: 40%;
+	border-radius: 5px;
+	padding: 40px;
+}
+.image-caption {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.rounded-float {
+	border-radius: 7%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.middle {
+	display: flex;
+	width: 100%;
+	margin: 5px auto;
+}
+.middle h1,
+.middle h3 {
+	font-family: cursive;
+	font-size: 24px;
+}
+
+.typeofWork {
+	display: flex;
+	justify-content: space-between; /* Untuk membuat kolom sama rata */
+	max-width: 800px; /* Atur lebar maksimum jika diperlukan */
+	margin: 0 auto; /* Centering kolom */
+}
+
+.typeofWork div {
+	text-align: center; /* Memastikan teks di tengah vertikal */
+	width: 30%; /* Atur lebar setiap kolom */
+	transition: transform 0.3s ease; /* Animasi transformasi */
+}
+
+.typeofWork div:hover {
+	transform: translateY(-10px); /* Menggeser elemen ke atas saat dihover */
+}
+
+.typeofWork img {
+	display: block; /* Menghilangkan spasi tambahan di sekitar gambar */
+	margin: 0 auto; /* Memusatkan gambar secara horizontal */
+}
